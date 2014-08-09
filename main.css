@@ -1,0 +1,23 @@
+body {
+	font-family: sans-serif;
+}
+
+div.main {
+	width: 70%;
+	margin: 0 auto;
+}
+
+div.page {
+	display: flex;
+	padding-top: .9em;
+}
+
+div.sidebar {
+	width: 25%;
+	border-right: 1px solid #D6D6D6;
+	padding-right: .5em;
+}
+
+div.content {
+	flex-grow: 1;
+}
