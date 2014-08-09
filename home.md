@@ -8,5 +8,5 @@ several modules.  Server implementations can support different modules or not as
 
 To see it in action, go to [jsonchess.com](http://jsonchess.com).
 
-jsonchess is open-source.  If you have any feedback or suggestions, post an issue to
+jsonchess is open-source.  If you have any feedback or suggestions, feel free to post an issue to
 [github](http://github.com/jsonchess/jsonchess).
