@@ -20,16 +20,18 @@ div.main {
 }
 
 div.page {
-	display: flex;
 	padding-top: .9em;
 }
 
 div.sidebar {
-	width: 25%;
+	float: left;
+	width: 15%;
+	margin-top: 1em;
+	margin-right: .9em;
 	border-right: 1px solid #D6D6D6;
-	padding-right: .5em;
+	padding-right: .7em;
 }
 
-div.content {
-	flex-grow: 1;
+div.sidebar ul {
+	list-style-type: none;
 }
