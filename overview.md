@@ -4,7 +4,7 @@ Overview
 Message format
 --------------
 
-The basic format of all messages sent is a JSON object with a `topic` field and
+The basic format of all messages exchanged on the protocol is a JSON object with a `topic` field and
 an optional `data` field.  The topics look like filesystem paths:
 
 `/game/123/move`
