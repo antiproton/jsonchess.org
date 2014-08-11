@@ -49,6 +49,8 @@ function markdown($fn) {
 			<div class="nav">
 				<a href="/">Home</a>
 				&nbsp;&nbsp;
+				<a href="/overview">Overview</a>
+				&nbsp;&nbsp;
 				<a href="/core">Core</a>
 				&nbsp;&nbsp;
 				<a href="/modules">Modules</a>
