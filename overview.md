@@ -22,5 +22,5 @@ with id "123" looks like this:
 		}
 	}
 
-The `index` field makes sure that moves can be ordered properly on the client in the
-unlikely event that they are received out of order.
+(The `index` field makes sure that moves can be ordered properly on the client in the
+unlikely event that they are received out of order.)
