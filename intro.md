@@ -52,11 +52,15 @@ denotes the range of numbers used to represent squares on the board.
 
 - `String`
 
-	JSON string (see [json.org][1])
+	JSON string (see [json.org][1]).
 
 - `Number`
 
 	JSON number (see [json.org][1]).
+
+- `Boolean`
+
+	JSON `true` or `false`.
 
 - `undefined`
 
