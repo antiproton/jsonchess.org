@@ -30,7 +30,7 @@ How messages are described in these pages
 ---------
 
 Each page of this website that deals with a part of the protocol is split
-into two sections: 'Data structures' and 'Topics'.  The data srtuctures
+into two sections: 'Data structures' and 'Topics'.  The data structures
 section declares some named data structures for referring to later when
 describing messages in the topics section.
 
