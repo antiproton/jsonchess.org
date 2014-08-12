@@ -52,11 +52,11 @@ denotes the range of numbers used to represent squares on the board.
 
 - `String`
 
-	JSON string (e.g. chat messages, game ids or player usernames).
+	JSON string (see [json.org][1])
 
 - `Number`
 
-	JSON number.
+	JSON number (see [json.org][1]).
 
 - `undefined`
 
@@ -69,3 +69,5 @@ denotes the range of numbers used to represent squares on the board.
 			"to": Square,
 			"promoteTo": undefined | PieceType
 		}
+
+[1]:http://json.org
