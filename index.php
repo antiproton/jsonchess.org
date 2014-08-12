@@ -49,7 +49,7 @@ function markdown($fn) {
 			<div class="nav">
 				<a href="/">Home</a>
 				&nbsp;&nbsp;
-				<a href="/overview">Overview</a>
+				<a href="/intro">Introduction</a>
 				&nbsp;&nbsp;
 				<a href="/core">Core</a>
 				&nbsp;&nbsp;
