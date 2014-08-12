@@ -10,8 +10,8 @@ filesystem paths:
 
 `/game/123/move`
 
-For example, the whole message sent by the server when the move e4 is
-played in the game with id "123" looks like this:
+The whole message sent by the server when the move e4 is played in the game
+with id "123" looks like this:
 
 	{  
 		"topic": "/game/123/move",
@@ -43,8 +43,11 @@ by the pipe character.  For example, if part of a message can be either a
 		"game": Game | null
 	}
 
+Ranges are specified using two periods and are always inclusive - '0 .. 63'
+denotes the range of numbers used to represent squares on the board.
+
 If a field doesn't have to be present in the structure at all, it lists the
-special reference 'undefined'; for example, in the ClientMove structure the
+special reference 'undefined'.  For example, in the ClientMove structure the
 promotion field isn't always required:
 
 	{
@@ -52,3 +55,9 @@ promotion field isn't always required:
 		"to": Square,
 		"promoteTo": undefined | PieceType
 	}
+
+####Other special references
+
+- `String`
+
+	Any JSON string.
