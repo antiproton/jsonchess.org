@@ -49,7 +49,7 @@ if($page) {
 				&nbsp;&nbsp;
 				<a href="/base">Base</a>
 				&nbsp;&nbsp;
-				<a href="/modules">Optional modules</a>
+				<a href="/optional-modules">Optional modules</a>
 			</div>
 			<div class="page">
 				<? if($sidebarLinks): ?>
