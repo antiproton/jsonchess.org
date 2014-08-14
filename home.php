@@ -6,7 +6,7 @@
 	they should behave.
 </p>
 <p>
-	The protocol consists of a core, which must be supported by all jsonchess
+	The protocol consists of a base, which must be supported by all jsonchess
 	servers, and several optional modules. Clients can request details of
 	what modules are supported from the server.
 </p>
