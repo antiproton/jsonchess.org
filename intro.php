@@ -64,8 +64,8 @@
 	<li>
 		<code>..</code>
 		<p>
-			Two dots are used to denote ranges of numbers or letters.  Ranges are always inclusive.
-			For example, the following data structure definition accepts any number from 0 to 63
+			Denotes ranges of numbers or letters.  Ranges are always inclusive.
+			For example, the following data structure definition accepts a number from 0 to 63
 			inclusive:
 		</p>
 		<p>
@@ -75,22 +75,21 @@
 	<li>
 		<code>|</code>
 		<p>
-			The pipe character means "or".
-			For example, the following data structure definition accepts either "w" or "b":
+			"or".
+		</p>
+		<p>
+			The following data structure definition accepts either "w" or "b":
 		</p>
 		<p>
 			<code>"w" | "b"</code>
 		</p>
 	</li>
-	<li>
-		<code>, ...</code>
-		<p>
-			Signifies that the item may be repeated 0 or more times in an array.
-			For example, the following data structure definition accepts an array
-			containing zero or more strings:
-		</p>
+</ul>
+<h3>Arrays</h3>
+<p>
+	Arrays are written as a type followed by <code>, ...</code> within square brackets.  The
+	following data structure definition accepts an array containing zero or more Strings:
+</p>
 		<p>
 			<code>[ String, ... ]</code>
 		</p>
-	</li>
-</ul>
