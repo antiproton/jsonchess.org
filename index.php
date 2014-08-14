@@ -31,10 +31,10 @@ if($page) {
 		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:400,700">
 		<link rel="stylesheet" type="text/css" href="/js/highlight/styles/tomorrow.css">
 		<script type="text/javascript" src="/js/highlight/highlight.js"></script>
-		<script type="text/javascript" src="/js/normaliseCodeTags.js"></script>
+		<script type="text/javascript" src="/js/cleanupCodeTags.js"></script>
 		<script>
 		window.addEventListener("load", function() {
-			normaliseCodeTags();
+			cleanupCodeTags();
 			hljs.initHighlighting();
 		});
 		</script>
