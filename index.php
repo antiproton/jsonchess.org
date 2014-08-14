@@ -47,9 +47,9 @@ if($page) {
 				&nbsp;&nbsp;
 				<a href="/intro">Introduction</a>
 				&nbsp;&nbsp;
-				<a href="/core">Core</a>
+				<a href="/base">Base</a>
 				&nbsp;&nbsp;
-				<a href="/modules">Modules</a>
+				<a href="/modules">Optional modules</a>
 			</div>
 			<div class="page">
 				<? if($sidebarLinks): ?>
