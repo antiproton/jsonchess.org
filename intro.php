@@ -73,7 +73,7 @@
 		</p>
 	</li>
 	<li>
-		<code>|</code>
+		<code>|</code> (pipe)
 		<p>
 			"or".
 		</p>
