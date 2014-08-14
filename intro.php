@@ -97,6 +97,5 @@
 <p>
 	When describing protocol messages: data structure references, ranges,
 	array notation and "undefined" have special meaning as explained above.
-	Everything else should be interpreted as plain JSON and will appear as-is
-	in the message in question.
+	Everything else is plain JSON.
 </p>
