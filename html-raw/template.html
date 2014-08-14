@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>jsonchess</title>
+		<link rel="stylesheet" type="text/css" href="/main.css">
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:400,700">
+		<link rel="stylesheet" type="text/css" href="/js/highlight/styles/tomorrow.css">
+		<script type="text/javascript" src="/js/highlight/highlight.js"></script>
+		<script type="text/javascript" src="/js/cleanupCodeTags.js"></script>
+		<script>
+		window.addEventListener("load", function() {
+			cleanupCodeTags();
+			hljs.initHighlighting();
+		});
+		</script>
+	</head>
+	<body>
+		<div class="main">
+			<h1>jsonchess.org</h1>
+			<div class="nav">
+				{{menu}}
+			</div>
+			<div class="page">
+				<div class="content">
+					{{page}}
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
