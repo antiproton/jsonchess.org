@@ -90,6 +90,13 @@
 	Arrays are written as a type followed by <code>, ...</code> within square brackets.  The
 	following data structure definition accepts an array containing zero or more Strings:
 </p>
-		<p>
-			<code>[ String, ... ]</code>
-		</p>
+<p>
+	<code>[ String, ... ]</code>
+</p>
+<h3>Summary</h3>
+<p>
+	When describing protocol messages: data structure references, ranges,
+	array notation and "undefined" have special meaning as explained above.
+	Everything else should be interpreted as plain JSON and will appear as-is
+	in the message in question.
+</p>
