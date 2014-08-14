@@ -1,0 +1,43 @@
+body {
+	font-family: "Open Sans";
+}
+
+h1, h2 {
+	font-weight: normal;
+}
+
+div.nav a {
+	color: #1365A0;
+}
+
+a {
+	color: #4E631A;
+}
+
+p > code {
+	border-radius: 2px;
+	padding: .15em .2em;
+	background: #f3f3f3;
+}
+
+div.main {
+	width: 70%;
+	margin: 0 auto 3em auto;
+}
+
+div.page {
+	padding-top: .9em;
+}
+
+div.sidebar {
+	float: left;
+	width: 15%;
+	margin-top: 1em;
+	margin-right: .9em;
+	border-right: 1px solid #D6D6D6;
+	padding-right: .7em;
+}
+
+div.sidebar ul {
+	list-style-type: none;
+}
