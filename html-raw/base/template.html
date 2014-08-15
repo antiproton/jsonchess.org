@@ -1,88 +1,9 @@
 <h1>Base</h1>
-<div class="menu">
-	
+<div class="twocol">
+	<div class="submenu">
+		{{menu}}
+	</div>
+	<div class="subpage">
+		{{page}}
+	</div>
 </div>
-<p>
-	This is the essential core of the protocol which needs to be properly
-	implemented by all jsonchess-compliant client and server applications.
-</p>
-<p>
-	It is split into submodules here for easy reference.
-</p>
-
-Data structures
----------------
-
-- `Colour`
-
-		"w" | "b"
-
-- `Square`
-
-		0 .. 63
-		
-	Squares are represented by numbers, with 0 being a1 and 63 being h8.
-
-- `Timestamp`
-
-		Number
-		
-	A point in time expressed as the number of milliseconds since the [Unix epoch][1].
-
-- `TimePeriod`
-
-		Number
-	
-	A period of time in milliseconds.
-
-- `Rating`
-
-		Number
-	
-	A Glicko-2 rating.
-
-- `PieceType`
-
-		"P" | "N" | "B" | "R" | "Q" | "K"
-
-
-- `Result`
-
-		...
-
-- `Player`
-
-		...
-
-- `Game`
-
-		{
-			"white": Player,
-			"black": Player,
-			"history": [ FullMove ],
-			"isInProgress": Boolean,
-			"result": null | Result,
-			"startTime": Timestamp,
-			"endTime": null | Timestamp,
-			"initialRatings": {
-				"w": Rating,
-				"b": Rating
-			},
-			"addedTime": {
-				"w": TimePeriod,
-				"b": TimePeriod
-			},
-			"isUndoRequested": Boolean,
-			"isDrawOffered": Boolean,
-			"rematchOfferedBy": null | Colour,
-			"options": {
-				"history": [ FullMove ],
-				"startTime": undefined | Timestamp,
-				"addedTime": null,
-				"initialTime": "10m",
-				"timeIncrement": "5"
-			},
-			"id": String
-		}
-	
-[1]:http://en.wikipedia.org/wiki/Unix_time
