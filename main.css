@@ -52,6 +52,7 @@ div.submenu a {
 	text-decoration: none;
 	font-size: .9em;
 	display: block;
+	border-bottom: 1px solid #F0EFEA;
 	padding: .5em .6em;
 }
 
