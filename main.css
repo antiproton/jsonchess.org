@@ -20,6 +20,11 @@ p > code {
 	background: #f3f3f3;
 }
 
+pre.data_structure {
+	margin-left: 2em;
+	background: #eeeeee;
+}
+
 div.main {
 	width: 70%;
 	margin: 0 auto 3em auto;
@@ -29,15 +34,31 @@ div.page {
 	padding-top: .9em;
 }
 
-div.sidebar {
-	float: left;
-	width: 15%;
-	margin-top: 1em;
-	margin-right: .9em;
-	border-right: 1px solid #D6D6D6;
-	padding-right: .7em;
+div.twocol {
+	display: flex;
+	align-items: flex-start;
 }
 
-div.sidebar ul {
-	list-style-type: none;
+div.submenu {
+	flex-shrink: 0;
+	width: 15%;
+	margin-right: .9em;
+	border-top: 4px solid #5B8EAA;
+	background: #f7f6f2;
+}
+
+div.submenu a {
+	color: #442d0a;
+	text-decoration: none;
+	font-size: .9em;
+	display: block;
+	padding: .5em .6em;
+}
+
+div.submenu a:hover {
+	text-decoration: underline;
+}
+
+div.subpage {
+	flex-grow: 1;
 }
