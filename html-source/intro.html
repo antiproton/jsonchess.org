@@ -1,4 +1,14 @@
 <h1>Introduction</h1>
+<h2>Scope</h2>
+<p>
+	The protocol only defines the messages sent back and forth and
+	what they mean;
+	it doesn't explicitly deal with the context of the messages (the
+	state of the client and server applications at time of sending).
+	It is left up to the developer to make sure
+	their implementation maintains a sensible state and handles messages
+	appropriately depending on the circumstances.
+</p>
 <h2>Message format</h2>
 <p>
 	The basic format of all messages exchanged on the protocol is a JSON

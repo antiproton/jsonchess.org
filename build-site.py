@@ -1,11 +1,11 @@
 import os, re
 
 """
-This builds the website out of the raw HTML files and templates.
+This builds the website out of the source HTML files and templates.
 """
 
 currentdir = os.getcwd()
-rawdir = os.path.join(currentdir, "html-raw")
+sourcedir = os.path.join(currentdir, "html-source")
 builtdir = os.path.join(currentdir, "html-built")
 parentTemplate = None
 
@@ -17,9 +17,9 @@ def href(root, webroot, fn):
 	else:
 		return path + ".html"
 
-for root, dirs, files in os.walk(rawdir):
+for root, dirs, files in os.walk(sourcedir):
 	filecontents = lambda fn: open(os.path.join(root, fn)).read()
-	webroot = root[len(rawdir):]
+	webroot = root[len(sourcedir):]
 	template = filecontents("template.html")
 	menu = filecontents("menu.html")
 	menu = re.sub(r'\[\[([^\]]+)\]\]', lambda match: href(root, webroot, match.group(1)), menu)
