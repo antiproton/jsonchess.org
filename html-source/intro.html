@@ -36,8 +36,11 @@
 	</code>
 </pre>
 <p>
-	(The <code>index</code> field makes sure that moves can be ordered
-	properly on the client in case they're received out of order.)
+	Variable parts of a topic, such as the game id above, are notated in this
+	documentation with colon-prefixed identifiers:
+</p>
+<p>
+	<code>"/game/:id/move"</code>
 </p>
 <h2>
 	Data structures
@@ -108,5 +111,7 @@
 <p>
 	When describing protocol messages: data structure references, ranges,
 	array notation and "undefined" have special meaning as explained above.
-	Everything else is plain JSON.
+	Everything else is plain JSON.  All messages are JSON objects with a
+	"topic" property and an optional "data" property, and are described in
+	the same way as data structures.
 </p>
