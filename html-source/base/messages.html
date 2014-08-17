@@ -1,0 +1,63 @@
+<h2>Messages</h2>
+<h5>Client &rarr; server</h5>
+<ul>
+	<li><a href="asd">asdA</a></li>
+</ul>
+<h5>Server &rarr; client</h5>
+<h3>Client &rarr; server</h3>
+<h4 id="client_request_time">/request/time</h4>
+<p>
+	Requests the current server time from the server.
+</p>
+<pre class="message">
+	<code>
+		{
+			"topic": "/request/time",
+			"data": String
+		}
+	</code>
+</pre>
+<p>
+	The client sends an arbitrary identifier, which will be sent back
+	with the server's response to allow the client to associate responses
+	with requests.
+</p>
+<p>
+	See <a href="#server_time_id">/time/:id (server &rarr; client)</a>.
+</p>
+<h4 id="client_request_user">/request/user</h4>
+<p>
+	Requests user details from the server.
+</p>
+<p>
+	See <a href="#server_user">/user (server &rarr; client)</a>.
+</p>
+<h4 id="client_seek">/seek</h4>
+<p>
+	Find a seek matching the specified criteria and accept it, or create
+	a seek for other players to accept.
+</p>
+<pre class="message">
+	<code>
+		{
+			"topic": "/seek",
+			"data": {
+				"initialTime": TimePeriod,
+				"timeIncrement": TimePeriod,
+				"acceptRatingMin": Rating,
+				"acceptRatingMax": Rating
+			}
+		}
+	</code>
+</pre>
+<p>
+	See <a href="#server_seek_waiting">/seek/waiting</a>,
+	<a href="#server_seek_matched">/seek/matched</a>,
+	<a href="#server_seek_expired">/seek/expired</a>,
+	<a href="#server_seek_error">/seek/error</a> (server &rarr; client);
+	<a href="constants.html#seek_timeout">SEEK_TIMEOUT</a>.
+</p>
+<h4 id="client_seek">/seek/cancel</h4>
+<p>
+	Cancel the current seek.
+</p>
