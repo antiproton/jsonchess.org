@@ -7,7 +7,6 @@ This builds the website out of the source HTML files and templates.
 currentdir = os.getcwd()
 rootsourcedir = os.path.join(currentdir, "html-source")
 builtdir = os.path.join(currentdir, "html-built")
-parentTemplate = None
 
 def href(root, webroot, fn):
 	path = os.path.join("/", webroot, fn)
